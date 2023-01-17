@@ -41,7 +41,7 @@ class Array{
 				if(ar[i]<min){
 					min = ar[i];
 				}
-				}
+			}
 			return min;
 		}
 		void search(float digit){
@@ -136,25 +136,34 @@ int main(int argc, char** argv) {
 	
 	cout<<"enter array"<<endl;
 	b.read(size);
+	// kochek tarin add arraye ra hsab konid
 	cout<<"the smallest number : "<<b.min()<<endl;
+	
+	// bozorg tarin add arraye ra hsab konid
 	cout<<"the largest  number : "<<b.max()<<endl;
 	
+	// yek add az karbar daryaft karde v dar array an ra search konid 
 	cout<<"enter digit for search"<<endl;
 	int digit;
 	cin>>digit;
 	b.search(digit);
 	
+	// yek add be array azafe konid
 	cout<<"enter number for add"<<endl;
 	int m;
 	cin>>m;
 	b.add(m);
 	b.print();
-	cout<<"number deleted"<<endl;
-	b.remove();
-	b.print();
+	// miangin ra mohasebe konid
 	cout<<"avg is: "<<b.avg()<<endl;
+	
+	// majmo ra mohasebe konid
 	cout<<"sum is: "<<b.sum()<<endl;
-	cout<<"mul is: "<<b.mul()<<endl;	
+	
+	// hasl zarb tamam adad array ra mohasebe konid
+	cout<<"mul is: "<<b.mul()<<endl;
+	
+	//	insertion sort
 	cout<<"insertion sort: "<<endl;
 	b.insertionSort();
 		
